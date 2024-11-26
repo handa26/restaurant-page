@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fffff0;
+  color: #212121;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 36px;
+  color: #212121;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+header {
+  padding: 20px 0;
+  border-bottom: 3px solid #dc143c;
+  background-color: #7cb342;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.links button {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid #dc143c;
+  cursor: pointer;
+}
+
+/* Content */
+section {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(assets/food-curry.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.content-text {
+  position: absolute;
+  top: 35%;
+
+  color: #fffff0;
+}
+
+.content-text h2 {
+  font-size: 48px;
+  margin-bottom: 14px;
+}
+
+.content-text p {
+  font-size: 20px;
+}
+
+.btn-group {
+  margin-top: 13px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 200px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.btn-full {
+  background-color: #dc143c;
+  color: #fff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #dc143c;
+  color: #dc143c;
+}
