@@ -54,6 +54,18 @@ nav {
   border-radius: 8px;
   border: 1px solid #dc143c;
   cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.links button:hover {
+  background-color: #dc143c;
+  color: #fff;
+}
+
+.link-active {
+  background-color: #dc143c;
+  color: #fff;
+  font-weight: bold;
 }
 
 /* Content */

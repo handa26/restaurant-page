@@ -11,7 +11,7 @@ function loadPage() {
   addEventListener("load", () => {
     content.innerHTML = home();
 
-    btnLinks.forEach((btnLink) => btnLink.addEventListener("click", () => {
+    btnLinks.forEach((btnLink) => btnLink.addEventListener("click", function() {
       if (btnLink.textContent === "Home") {
         content.innerHTML = home();
       } else if (btnLink.textContent === "Menu") {
@@ -21,6 +21,10 @@ function loadPage() {
       } else {
         content.innerHTML = home();
       }
+
+      // Add active class to current page
+      btnLinks.forEach(btnLink => btnLink.classList.remove("link-active"));
+      this.classList.add("link-active")
     }));
   })
 }
